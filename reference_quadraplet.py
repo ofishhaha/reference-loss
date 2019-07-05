@@ -5,7 +5,7 @@ from torch import nn
 from torch.autograd import Variable
 
 
-class TripletLoss(nn.Module):
+class ReferenceLoss(nn.Module):
     def __init__(self, margin=0):
         super(TripletLoss, self).__init__()
         self.margin = margin
